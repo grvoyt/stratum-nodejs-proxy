@@ -1,0 +1,33 @@
+{
+    "default": {
+        "account": "grvoyt",
+        "debug": true,
+        "admin": {
+            "port": 4032,
+            "cors": "*"
+        },
+        "proxy": [{
+            "comment": "128-8192 variable difficulty, recommended for hashrate < 15 MH",
+            "listen": {
+                "port": 3333
+            },
+            "connect": {
+                "host": "eu1.btc.sigmapool.com",
+                "port": 3333
+            }
+        }],
+        "mysql": {
+            "host":"10.5.128.33",
+            "port": 3306,
+            "user": "root",
+            "password": "password",
+            "database": "database"
+        }
+    },
+    "development": {},
+    "test": {},
+    "staging": {},
+    "production": {
+        "debug": false
+    }
+}

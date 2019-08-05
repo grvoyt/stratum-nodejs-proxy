@@ -1,0 +1,30 @@
+{
+  "name": "node-stratum-proxy",
+  "description": "Simple Stratum Proxy",
+  "version": "0.1.5",
+  "private": true,
+  "main": "stratum-proxy.js",
+  "dependencies": {
+    "async": "*",
+    "body-parser": "1.2.x",
+    "cookie-parser": "*",
+    "express": "4.x",
+    "konfig": "*",
+    "morgan": "*",
+    "redis": "^2.8.0",
+    "serve-favicon": "*",
+    "socket.io": "0.9.x",
+    "util": "*",
+    "uuid": "*",
+    "mysql": "*",
+    "request": "2.69.0"
+  },
+  "peerDepenencies": {
+    "node-windows": "*"
+  },
+  "scripts": {
+    "start": "node ./stratum-proxy.js",
+    "winsrv-install": "node ./script/winsrv-install.js",
+    "winsrv-uninstall": "node ./script/winsrv-uninstall.js"
+  }
+}
