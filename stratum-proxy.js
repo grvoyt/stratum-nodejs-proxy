@@ -126,11 +126,8 @@ var ProxyObject = function(socket, proxy) {
                         case 'mining.submit':
                             dataSend.push(self.changeUser(jsonTemp, 'submit'));
                             break;
-                        case 'mining.subscribe':
-
-                            break;
-                        case 'mining.configure':
-                            console.log("TRY CONFIGURE \n\n");
+                        default:
+                            dataSend.push(data);
                             break;
                     }
                 }
